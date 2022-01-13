@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Reego</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
@@ -12,12 +13,13 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+</head>
 
-  <body class="bg-stone-800">
+<body class="bg-stone-800">
     <%= render partial: 'shared/navbar' %>
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <%= yield %>
     </div>
-  </body>
+</body>
+
 </html>
