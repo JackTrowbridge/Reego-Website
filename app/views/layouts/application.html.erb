@@ -6,13 +6,18 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <link rel="icon" src="icon.png">
+
     <script src="https://cdn.tailwindcss.com"></script>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="bg-stone-800">
+    <%= render partial: 'shared/navbar' %>
+    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <%= yield %>
+    </div>
   </body>
 </html>
